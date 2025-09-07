@@ -1,10 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html amp lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async src="https://cdn.ampproject.org/amp-story-player-v0.js"></script>
+  <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+  
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+  
+      to {
+        visibility: visible
+      }
+    }
+  
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+  
+      to {
+        visibility: visible
+      }
+    }
+  
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+  
+      to {
+        visibility: visible
+      }
+    }
+  
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+  
+      to {
+        visibility: visible
+      }
+    }
+  
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+  
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
   <script async src="./main.js" type="module"></script>
   <link href="https://cdn.ampproject.org/amp-story-player-v0.css" rel="stylesheet" type="text/css">
 
@@ -24,18 +94,20 @@
   <!--   header  -->
   <div class="header">
     <div class="hamburger-menu"></div>
-    <div class="title"><span>WORLD </span><span>NEWS</span></div>
+    <div class="title"><span>MINNOW </span><span>NEWS </span></div>
     <div class="user-icon"></div>
   </div>
 
   <!--hero -->
   <div class="hero-section">
-    <img class="hero-img" src="https://assets.codepen.io/1780597/forest.png" alt="a highway in a snow forest" />
+    <amp-img class="hero-img" src="./img/fish4.png"   width="412"
+    height="229"
+    layout="responsive"alt="a highway in a snow forest" />
     <div class="hero-text-section">
       <div class="hero-text-container">
         <span class="hero-text-title">Winter Wonderlands Around the World</span>
         <span class="hero-text-body">We tend to associate winter with bleak, gray skies and runny noses, but there's a beautiful side to the season that often gets overlooked.</span>
-        <span class="hero-text-author">BY Wade Warren</span>
+        <span class="hero-text-author">BY Brian Ebel</span>
       </div>
     </div>
   </div>
@@ -51,17 +123,17 @@
               <div class="background-card-1"></div>
               <div class="background-card-2"></div>
             </div>
-            <img src="https://assets.codepen.io/1780597/pizza.jpg" class="entry-point-card-img" alt="A cat">
+            <img src="./img/fall.png" class="entry-point-card-img" alt="A cat">
             <div class="author-container">
               <div class="logo-container">
                 <div class="logo-ring"></div>
-                <img class="entry-point-card-logo" src="https://assets.codepen.io/1780597/1pizza_logo.png" alt="Publisher logo">
+                <img class="entry-point-card-logo" src="./img/me.png" alt="Publisher logo">
               </div>
-              <span class="entry-point-card-subtitle"> By John Wilson </span>
+              <span class="entry-point-card-subtitle"> By Brian Ebel </span>
             </div>
 
             <div class="card-headline-container">
-              <span class="entry-point-card-headline"> A Taste Of New York Pizza History </span>
+              <span class="entry-point-card-headline"> Fall Recipes </span>
             </div>
           </div>
 
@@ -74,13 +146,13 @@
             <div class="author-container">
               <div class="logo-container">
                 <div class="logo-ring"></div>
-                <img class="entry-point-card-logo" src="https://assets.codepen.io/1780597/3logo.png" alt="Publisher logo">
+                <img class="entry-point-card-logo" src="./img/me.png" alt="Publisher logo">
               </div>
-              <span class="entry-point-card-subtitle"> By Jane Cooper </span>
+              <span class="entry-point-card-subtitle"> By Brian Ebel </span>
             </div>
 
             <div class="card-headline-container">
-              <span class="entry-point-card-headline"> A day-long musical journey </span>
+              <span class="entry-point-card-headline"> New Music from 90s Artists </span>
             </div>
           </div>
 
@@ -93,13 +165,13 @@
             <div class="author-container">
               <div class="logo-container">
                 <div class="logo-ring"></div>
-                <img class="entry-point-card-logo" src="https://assets.codepen.io/1780597/2logo.png" alt="Publisher logo">
+                <img class="entry-point-card-logo" src="./img/me.png" alt="Publisher logo">
               </div>
-              <span class="entry-point-card-subtitle"> By Sean Dong </span>
+              <span class="entry-point-card-subtitle"> By Brian Ebel </span>
             </div>
 
             <div class="card-headline-container">
-              <span class="entry-point-card-headline"> Home Warrior Pandemic Special </span>
+              <span class="entry-point-card-headline"> Zen Swing </span>
             </div>
           </div>
 
@@ -112,9 +184,9 @@
             <div class="author-container">
               <div class="logo-container">
                 <div class="logo-ring"></div>
-                <img class="entry-point-card-logo" src="https://assets.codepen.io/1780597/4logo.png" alt="Publisher logo">
+                <img class="entry-point-card-logo" src="./img/me.png" alt="Publisher logo">
               </div>
-              <span class="entry-point-card-subtitle"> By Jamie Leach </span>
+              <span class="entry-point-card-subtitle"> By Brian Ebel </span>
             </div>
 
             <div class="card-headline-container">
@@ -131,9 +203,9 @@
             <div class="author-container">
               <div class="logo-container">
                 <div class="logo-ring"></div>
-                <img class="entry-point-card-logo" src="https://assets.codepen.io/1780597/5logo.png" alt="Publisher logo">
+                <img class="entry-point-card-logo" src="./img/me.png" alt="Publisher logo">
               </div>
-              <span class="entry-point-card-subtitle"> By Hong Wei </span>
+              <span class="entry-point-card-subtitle"> By Brian Ebel </span>
             </div>
 
             <div class="card-headline-container">
@@ -150,9 +222,9 @@
             <div class="author-container">
               <div class="logo-container">
                 <div class="logo-ring"></div>
-                <img class="entry-point-card-logo" src="https://assets.codepen.io/1780597/6logo.png" alt="Publisher logo">
+                <img class="entry-point-card-logo" src="./img/me.png" alt="Publisher logo">
               </div>
-              <span class="entry-point-card-subtitle"> By Jenny Wilson </span>
+              <span class="entry-point-card-subtitle"> By Brian Ebel </span>
             </div>
 
             <div class="card-headline-container">
@@ -169,9 +241,9 @@
             <div class="author-container">
               <div class="logo-container">
                 <div class="logo-ring"></div>
-                <img class="entry-point-card-logo" src="https://assets.codepen.io/1780597/5logo.png" alt="Publisher logo">
+                <img class="entry-point-card-logo" src="./img/me.png" alt="Publisher logo">
               </div>
-              <span class="entry-point-card-subtitle"> By Hong Wei </span>
+              <span class="entry-point-card-subtitle"> By Brian Ebel </span>
             </div>
 
             <div class="card-headline-container">
