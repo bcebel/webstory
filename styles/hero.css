@@ -1,53 +1,47 @@
 .hero-section {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* Ensure image and text fill the height */
   width: 100%;
-  height: 540px;
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  display: inline-block;
+  max-width: 1200px; /* Constrain width */
+  margin: 0 auto; /* Center the section */
+  background: #000000;
+  height: 540px; /* Fixed height for desktop */
 }
 
 .hero-img {
-
-  grid-column: span 2;
-  width: 100%;
-  height: 100%;
-
-
-
+  flex: 0 0 50%; /* Take 50% width, no growing/shrinking */
+  max-width: 90%; /* Cap width to prevent overflow */
+  height: 100%; /* Match parent height */
+  object-fit: contain; /* Preserve aspect ratio, show full image */
+  object-position: left; /* Align image to the left */
+  border-radius: 16px;
 }
 
 .hero-text-section {
-    grid-column: span 1;
-  background: #000000;
-  position: relative;
-  width: 100%;
+  flex: 1; /* Take remaining space */
+  display: flex;
+  align-items: center; /* Vertically center text */
+  justify-content: center; /* Horizontally center text */
+  padding: 5px;
+  color: #ffffff;
+  font-family: Poppins, sans-serif;
 }
 
 .hero-text-container {
-  padding: 0px 54px;
-  font-style: normal;
-  color: #ffffff;
-  font-family: Poppins;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.hero-text-container > * {
-  display: block;
+  max-width: 400px; /* Prevent text from getting too wide */
 }
 
 .hero-text-title {
+  display: block;
   font-weight: bold;
   font-size: 1.75em;
   margin-bottom: 12px;
 }
 
 .hero-text-body {
-  font-family: Georgia;
-
+  display: block;
+  font-family: Georgia, serif;
   font-weight: normal;
   font-size: 1.125em;
   color: #dbdce0;
@@ -55,24 +49,31 @@
 }
 
 .hero-text-author {
-  font-family: Poppins;
+  display: block;
+  font-family: Poppins, sans-serif;
   font-weight: 500;
-  font-size: .7em;
+  font-size: 0.7em;
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
-/* Mobile CSS rules here*/
+/* Mobile styles */
 @media only screen and (max-width: 880px) {
   .hero-section {
-    height: 100%;
+    flex-direction: column; /* Stack vertically */
+    height: auto; /* Allow height to adjust */
   }
-  
-  .hero-text-section {
-    display: none;
-  }
-  
+
   .hero-img {
-    grid-column: span 3;
+    flex: none; /* Reset flex behavior */
+    width: 100%; /* Full width for mobile */
+ max-height: 200px;
+    object-fit: cover; /* Fill container, may crop */
+  }
+
+  .hero-text-section {
+    width: 100%; /* Full width for mobile */
+
+  
   }
 }
