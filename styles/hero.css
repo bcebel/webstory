@@ -1,35 +1,36 @@
 .hero-section {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch; /* Ensure image and text fill the height */
+  position: relative; /* Allow absolute positioning of text */
   width: 100%;
-  max-width: 1200px; /* Constrain width */
+  max-width: 1200px; /* Constrain width for larger screens */
   margin: 0 auto; /* Center the section */
-  background: #000000;
   height: 540px; /* Fixed height for desktop */
 }
 
 .hero-img {
-  flex: 0 0 50%; /* Take 50% width, no growing/shrinking */
-  max-width: 90%; /* Cap width to prevent overflow */
-  height: 100%; /* Match parent height */
-  object-fit: contain; /* Preserve aspect ratio, show full image */
-  object-position: left; /* Align image to the left */
-  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fill container, may crop edges */
+  display: block; /* Ensure AMP wrapper behaves */
 }
 
 .hero-text-section {
-  flex: 1; /* Take remaining space */
+  position: absolute; /* Overlay text on image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center; /* Vertically center text */
   justify-content: center; /* Horizontally center text */
-  padding: 5px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
   color: #ffffff;
   font-family: Poppins, sans-serif;
 }
 
 .hero-text-container {
-  max-width: 400px; /* Prevent text from getting too wide */
+  max-width: 600px; /* Limit text width for readability */
+  text-align: center; /* Center text content */
+  padding: 20px;
 }
 
 .hero-text-title {
@@ -60,20 +61,24 @@
 /* Mobile styles */
 @media only screen and (max-width: 880px) {
   .hero-section {
-    flex-direction: column; /* Stack vertically */
-    height: auto; /* Allow height to adjust */
+    height: 400px; /* Reduced height for mobile */
   }
 
   .hero-img {
-    flex: none; /* Reset flex behavior */
-    width: 100%; /* Full width for mobile */
- max-height: 200px;
-    object-fit: cover; /* Fill container, may crop */
+    height: 100%;
+    object-fit: cover; /* Ensure image fills container */
   }
 
-  .hero-text-section {
-    width: 100%; /* Full width for mobile */
+  .hero-text-container {
+    padding: 15px;
+    max-width: 90%; /* Allow more text width on smaller screens */
+  }
 
-  
+  .hero-text-title {
+    font-size: 1.5em; /* Slightly smaller for mobile */
+  }
+
+  .hero-text-body {
+    font-size: 1em;
   }
 }
