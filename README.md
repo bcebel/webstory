@@ -4,6 +4,7 @@ This project is a web page that displays a carousel of AMP (Accelerated Mobile P
 
 ## Articles
 
+*   **GameStop's High-Stakes Wager**: An article about GameStop's recent news.
 *   **New Banksy at the Royal Courts of Justice**: An article about the new Banksy mural in London.
 
 ## Files included
@@ -14,6 +15,9 @@ This project is structured as follows:
 .
 ├── assets/
 │   ├── banksy_mural.jpg
+│   ├── gamestop_store.jpg
+│   ├── ryan_cohen.jpg
+│   ├── stock_chart.jpg
 │   ├── royal_courts_of_justice.jpg
 │   └── Contains images, videos, and audio files for the stories.
 ├── img/
