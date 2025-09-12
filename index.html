@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async src="https://cdn.ampproject.org/amp-story-player-v0.js"></script>
+  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
   <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <style amp-boilerplate>
@@ -83,6 +84,7 @@
   <link href="./styles/hero.css" rel="stylesheet" type="text/css">
   <link href="./styles/cards.css" rel="stylesheet" type="text/css">
   <link href="./styles/carousel.css" rel="stylesheet" type="text/css">
+  <link href="./styles/hamburger.css" rel="stylesheet" type="text/css">
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -93,7 +95,21 @@
 
   <!--   header  -->
   <div class="header">
-    <div class="hamburger-menu"></div>
+    <div class="hamburger_wrapper">
+      <div id="hamburger" tabindex="1" role="button" on="tap:hamburger.toggleClass(class='close'),nav-menu.toggleClass(class='now-active')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div id="nav-menu">
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
     <div class="title"><span>MNN </span></div>
     <div class="user-icon"></div>
   </div>

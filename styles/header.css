@@ -13,13 +13,6 @@
   justify-content: space-between;
 }
 
-.hamburger-menu {
-  width: 24px;
-  height: 21px;
-  margin-left: 32px;
-  background-image: url('data:image/svg+xml;charset=utf-8,<svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><line y1="1.5" x2="24" y2="1.5" stroke="white" stroke-width="3"/><line y1="10.5" x2="16.8" y2="10.5" stroke="white" stroke-width="3"/><line y1="19.5" x2="24" y2="19.5" stroke="white" stroke-width="3"/></svg>');
-}
-
 .user-icon {
   width: 24px;
   height: 24px;
@@ -47,10 +40,6 @@
 
 /* Mobile CSS rules here*/
 @media only screen and (hover: none) and (pointer: coarse) {
-  .hamburger-menu {
-    margin-left: 14px;
-  }
-  
   .user-icon {
     margin-right: 14px;
   }
