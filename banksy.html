@@ -6,6 +6,7 @@
   <title>New Banksy at the Royal Courts of Justice</title>
   <link rel="canonical" href="banksy.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
   <style amp-boilerplate>
     body {
       -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -76,6 +77,7 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+  <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400" rel="stylesheet">
   <style amp-custom>
     amp-story {
@@ -135,10 +137,10 @@
 <body>
   <!-- Cover page -->
   <amp-story standalone title="New Banksy at the Royal Courts of Justice" publisher="Minnow News Network"
-    publisher-logo-src="assets/AMP-Brand-White-Icon.svg" poster-portrait-src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Royal_Courts_of_Justice_from_street_level.jpg/1200px-Royal_Courts_of_Justice_from_street_level.jpg">
+    publisher-logo-src="assets/AMP-Brand-White-Icon.svg" poster-portrait-src="./assets/banksy.avif">
     <amp-story-page id="cover">
       <amp-story-grid-layer template="fill">
-        <amp-img src="assets/royal_courts_of_justice.jpg" width="720" height="1280" layout="responsive">
+        <amp-img src="assets/banksy.avif" width="4" height="2.25" layout="responsive">
         </amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
@@ -149,8 +151,7 @@
     <!-- Page 1 -->
     <amp-story-page id="page1">
       <amp-story-grid-layer template="fill">
-        <amp-img src="assets/banksy_mural.jpg" width="720" height="1280" layout="responsive">
-        </amp-img>
+        <amp-youtube autoplay data-videoid="l9houNQYonI" layout="responsive" width="480" height="270"></amp-youtube>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" class="bottom">
         <p style="background-color: rgba(0,0,0,0.7);">A new mural by street artist Banksy appeared on the side of the Royal Courts of Justice in London.</p>
